@@ -1,0 +1,72 @@
+/* Pengaturan dasar halaman */
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body { margin: 0; background: #f7f5ec; color: #26352b; font-family: Arial, sans-serif; }
+table { border-collapse: collapse; }
+.halaman { width: 87%; max-width: 1150px; margin: auto; }
+.header { margin-top: 24px; margin-bottom: 20px; }
+.header h2, .footer h2 { font-family: Georgia, serif; font-size: 25px; margin: 0; }
+.header h2 span, .footer h2 span, .merah { color: #af4934; }
+a { color: inherit; text-decoration: none; }
+.header a { font-size: 12px; margin: 0 8px; }
+.header a:hover, .intro a:hover { color: #af4934; }
+hr { border: 0; border-top: 1px solid #c9c9bc; }
+.kecil, .baris-kecil, .judul-bagian, .footer { font-size: 9px; letter-spacing: 2px; }
+.hero { margin-top: 32px; margin-bottom: 12px; }
+.hero h1 { font-family: Georgia, serif; font-size: clamp(55px, 7.4vw, 112px); font-weight: normal; letter-spacing: -5px; line-height: .97; margin: 25px 0; }
+.hero h1 em { color: #af4934; }
+.bintang { color: #af4934; font-size: .5em; vertical-align: middle; }
+.intro { padding-left: 45px; vertical-align: middle; font-size: 13px; line-height: 2; }
+.intro a { display: inline-block; margin-top: 15px; border-bottom: 1px solid #26352b; font-size: 11px; padding-bottom: 5px; }
+.baris-kecil { border-top: 1px solid #d4d4c8; padding-top: 12px; margin-bottom: 15px; }
+.baris-kecil td { padding-top: 12px; }
+.pita { background: #e8bf59; border-top: 1px solid #b99036; border-bottom: 1px solid #b99036; text-align: center; margin-top: 15px; }
+.pita td { padding: 14px 8px; font: italic 20px Georgia, serif; }
+.judul-bagian { margin: 42px 0 26px; }
+.artikel { margin-bottom: 50px; }
+.artikel-isi { padding-right: 20px; font-size: 12px; line-height: 1.85; }
+.artikel-isi h2, .laboratorium h2 { font: normal 40px/1.1 Georgia, serif; letter-spacing: -1px; margin: 18px 0; }
+.subjudul { font: 18px/1.45 Georgia, serif; }
+.abu { color: #80877e; }
+.paragraf-awal:first-letter { float: left; font: 58px Georgia, serif; color: #af4934; padding-right: 7px; line-height: .85; }
+.artikel-isi hr { margin-top: 28px; }
+.kartu { background: #eae9e0; padding: 25px; min-height: 390px; font-size: 12px; }
+.kartu .aa { font: 105px Georgia, serif; margin: 18px 0 0; line-height: 1; }
+.kartu .aa span { color: #af4934; }
+.kartu small { color: #626d62; font-size: 10px; line-height: 1.7; }
+.kutipan { background: #263f32; color: #f7f5ec; }
+.dalam-kutipan { width: 87%; max-width: 1150px; margin: auto; }
+.dalam-kutipan td { padding: 22px 0; }
+.dalam-kutipan p { font: 38px/1.25 Georgia, serif; margin: 10px 0; }
+.dalam-kutipan em { color: #e8bf59; }
+.tiga-kotak td { width: 33.33%; padding: 24px; vertical-align: top; height: 225px; border: 1px solid #9e9f90; font-size: 12px; line-height: 1.7; }
+.tiga-kotak h2 { font: 43px Georgia, serif; margin: 22px 0 14px; }
+.tiga-kotak .jeda { letter-spacing: 6px; }
+.tiga-kotak small { font: 9px monospace; }
+.kotak-kuning { background: #e8bf59; }
+.kotak-merah { background: #af4934; color: #fff6e9; }
+.kotak-putih { background: #e6e9e1; }
+.kotak-putih h2 { font: bold 36px Arial, sans-serif; }
+.pemisah { margin-top: 65px; }
+.laboratorium { height: 210px; }
+.laboratorium h2 { font-size: 31px; }
+.laboratorium p { font-size: 12px; line-height: 1.8; color: #68766a; }
+.penutup { text-align: center; padding: 38px 0 45px; }
+.penutup > p:nth-child(2) { font: 23px/1.5 Georgia, serif; }
+.penutup em { color: #7b887a; }
+.penutup a { font-size: 11px; border-bottom: 1px solid; padding-bottom: 5px; }
+.footer { padding: 25px 0; }
+.footer td { padding: 20px 0; }
+@media (max-width: 700px) {
+  .halaman, .dalam-kutipan { width: 94%; }
+  .header td, .hero td, .artikel td { display: block; width: 100%; }
+  .header td { text-align: left; padding: 8px 0; }
+  .hero h1 { letter-spacing: -2px; }
+  .intro { padding: 10px 0 25px; }
+  .pita td { font-size: 12px; padding: 12px 3px; }
+  .artikel td { padding: 0; }
+  .kartu { margin-top: 25px; }
+  .dalam-kutipan p { font-size: 27px; }
+  .tiga-kotak td { display: block; width: 100%; height: auto; }
+  .footer td { font-size: 8px; }
+}
